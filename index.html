@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/Logo.png" alt="logo-alura">
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main>
+        <section class="one">
+            <textarea class="textarea-one" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="note">
+                <spam><img src="./images/bi_exclamation-circle-fill.png" alt="">Solo letras minúsculas y sin acentos.</spam>
+                <div class="buttons">
+                    <button class="btn-principal btn-principal__encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-principal" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="two">
+            <div class="container-two">
+                <textarea class="textarea-two"></textarea>
+                <div class="div-img">
+                    <img class="muñeco" src="./images/Muñeco.png" alt="" srcset="">
+                    <h4>Ingresa el texto que deseas encriptar</h4>
+                </div>
+                <div class="btn-copy">
+                    <button onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2024-Desarrollado por Sabrina Villasboa</p>
+    </footer>
+    <script src="./index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

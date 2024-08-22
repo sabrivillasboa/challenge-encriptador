@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #D7E0FC;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: #6140DC;
+}
+
+main{
+    display: flex;
+    height: calc(100vh - 112px);
+}
+
+.one{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.textarea-one{
+    font-size: 1.5rem;
+    color: #6140DC;
+    width: 80%;
+    height: 60%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+}
+
+.note{
+    width: 80%;
+    font-size: 0.8rem;
+    line-height: 3rem;
+    
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+button{
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 1rem;
+    border: 1px solid #6140DC;
+    color: #6140DC;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover{
+    background: #af9df0;
+}
+
+.btn-principal__encriptar{
+    background-color: #6140DC;
+    color: #f2f2f2;
+}
+
+.two{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.container-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 95%;
+    border: solid 1px #6140DC;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+}
+
+.textarea-two{
+    background-color: #f2f2f2;
+    color: #6140DC;
+    font-size: 1.5rem;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.div-img{
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    background-color: #f2f2f2;
+    color: #6140DC;
+    
+}
+
+.muñeco{
+    background-color: #f2f2f2;
+}
+
+h4{
+    background-color: #f2f2f2;
+}
+
+.btn-copy{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f2f2f2;
+}
+
+footer{
+    display: flex;
+    background-color: #6140DC;
+    height: 10vh;
+    justify-content: center;
+}
+
+p{
+    font-size: 1rem;
+    align-content: center;
+    color: #f2f2f2;
+    background-color: #6140DC;
+}
+
+@media (max-width:1024px) {
+
+    .textarea-one{
+        width: 90%;
+    }
+
+    .btn-principal{
+        width: 45%;
+    }
+
+    .note{
+        width: 90%;
+    }
+    .muñeco{
+        width: 80%;
+    }
+    .div-img{
+        border-right: 1px solid #6140DC;
+        border-left: 1px solid #6140DC;
+        width: 30%;
+    }
+
+    h4{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:800px) {
+    main{
+        flex-direction: column;
+        height: auto;
+    }
+
+    header{
+        padding: 1rem;
+    }
+
+    .div-img{
+        display: none;
+    }
+
+    .textarea-one{
+        width: 80%;
+        height: 60%;
+        padding: 1rem;
+    }
+
+    .one{
+        height: 70vh;
+        width: auto;
+    }
+
+    .note{
+        width: 80%;
+    }
+
+    .buttons{
+        padding: 0;
+    }
+
+    .two{
+        width: auto;
+        height: auto;
+        justify-content:center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .container-two{
+        width: 80%;
+        height: auto;
+        
+    }
+
+    .textarea-two{
+        height: 20vh;
+        border-radius: 15px;
+        padding: 1rem;
+    }
+    
+    .btn-copy{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .btn-copy button {
+        width: 100%;
+    }
+}
+
+@media (max-width:480px){
+    header{
+        justify-content: left;
+    }
+    .logo{
+        height: 2.5rem;
+    }
+
+    h1{
+        align-content: center;
+        font-size: 1.4rem;
+    }
+
+    .one{
+        height: 60vh;
+    }
+
+    .textarea-one{
+        font-size: 1.2rem;
+        width: 90%;
+        height: 50%;
+        border: none;
+        outline: none;
+    }
+
+    .note{
+        width: 90%;
+        font-size: 1rem;
+        
+    }
+
+    .note spam{
+        display: flex;
+        align-items: center;
+    }
+
+    .note spam img{
+        height: 1.5rem;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    button{
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .btn-principal{
+        width: 100%;
+    }
+    
+    .two{
+        padding: 0.7rem;
+    }
+
+    .container-two{
+        width: 95%;
+        border: none;
+    }
+
+    .textarea-two{
+        font-size: 1rem;
+        height: 15vh;
+        border-radius: 1rem;
+    }
+
+    .btn-copy{
+        width: 100%;
+        border-radius: 1rem;
+        padding: 0;
+    }
+
+    footer{
+        margin-top: 1.2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
